@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowUpRight, Hammer, TrendingUp, KeyRound } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { propertyImages } from '../assets/images';
 
 interface ServicesSectionProps {
   currentLang: Language;
@@ -12,9 +13,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ currentLang, o
   const t = translations[currentLang];
 
   const serviceImages = [
-    '/src/assets/images/hero_kazanchis_luxury_1794125396070.jpg',
-    '/src/assets/images/villa_summit72_exterior_1794125396413.jpg',
-    '/src/assets/images/interior_living_kazanchis_1794125397684.jpg',
+    propertyImages.heroKazanchis,
+    propertyImages.villaSummit72,
+    propertyImages.interiorLiving,
   ];
 
   const serviceIcons = [

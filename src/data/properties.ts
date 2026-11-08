@@ -1,4 +1,5 @@
 import { Property } from '../types';
+import { propertyImages } from '../assets/images';
 
 export const initialProperties: Property[] = [
   {
@@ -36,8 +37,8 @@ export const initialProperties: Property[] = [
     kitchens: 1,
     balconies: 2,
     images: [
-      '/src/assets/images/hero_kazanchis_luxury_1794125396070.jpg',
-      '/src/assets/images/interior_living_kazanchis_1794125397684.jpg',
+      propertyImages.heroKazanchis,
+      propertyImages.interiorLiving,
     ],
     description: {
       en: 'Wing 1 Type 1 is a premium residential unit located in the prestigious Kazanchis corridor of Addis Ababa. Meticulously designed with two private bedrooms, two fully finished bathrooms, an ergonomic modern kitchen, and dual scenic balconies with views over the Addis Ababa cityscape. Built to international structural standards with imported finishes.',
@@ -94,9 +95,9 @@ export const initialProperties: Property[] = [
     kitchens: 2,
     balconies: 3,
     images: [
-      '/src/assets/images/villa_summit72_exterior_1794125396413.jpg',
-      '/src/assets/images/villa_garden_compound_1794125397739.jpg',
-      '/src/assets/images/interior_living_kazanchis_1794125397684.jpg',
+      propertyImages.villaSummit72,
+      propertyImages.villaGardenCompound,
+      propertyImages.interiorLiving,
     ],
     description: {
       en: 'An architectural centerpiece within GET-AS’s premier 40,000 square meter compound in Summit 72. This private G+1 villa offers four lavish en-suite bedrooms, open-concept living salons, private outdoor terrace, manicured lawn garden, family entertainment room, and staff quarters.',
@@ -151,8 +152,8 @@ export const initialProperties: Property[] = [
     kitchens: 1,
     balconies: 2,
     images: [
-      '/src/assets/images/hero_kazanchis_luxury_1794125396070.jpg',
-      '/src/assets/images/interior_living_kazanchis_1794125397684.jpg',
+      propertyImages.heroKazanchis,
+      propertyImages.interiorLiving,
     ],
     description: {
       en: 'Positioned on the upper floors of GET-AS Kazanchis tower, featuring expansive glass windows, uninterrupted panoramic vistas of the capital, European oak engineered floors, and sound-insulated double glazing.',
@@ -202,7 +203,7 @@ export const initialProperties: Property[] = [
     kitchens: 1,
     balconies: 1,
     images: [
-      '/src/assets/images/commercial_tower_addis_1794125397455.jpg',
+      propertyImages.commercialTower,
     ],
     description: {
       en: 'Prime commercial office floor with flexible open-plan layout, bronze sun-shading facade, dual high-capacity generators, executive conference rooms, and high visibility on the main Kazanchis thoroughfare.',
@@ -250,8 +251,8 @@ export const initialProperties: Property[] = [
     kitchens: 1,
     balconies: 2,
     images: [
-      '/src/assets/images/villa_garden_compound_1794125397739.jpg',
-      '/src/assets/images/interior_living_kazanchis_1794125397684.jpg',
+      propertyImages.villaGardenCompound,
+      propertyImages.interiorLiving,
     ],
     description: {
       en: 'Well-appointed three-bedroom flat located inside the delivered residential towers at Summit 72 compound. Features garden outlooks, generous natural daylight, modern fittings, and quiet environment.',

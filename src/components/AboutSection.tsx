@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Building, ShieldCheck, X } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { propertyImages } from '../assets/images';
 
 interface AboutSectionProps {
   currentLang: Language;
@@ -20,7 +21,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onExplo
           <div className="lg:col-span-6 relative">
             <div className="relative z-10 rounded overflow-hidden shadow-2xl border border-slate-200">
               <img
-                src="/src/assets/images/villa_garden_compound_1794125397739.jpg"
+                src={propertyImages.villaGardenCompound}
                 alt="GET-AS Summit 72 Compound Development"
                 referrerPolicy="no-referrer"
                 className="w-full h-[380px] sm:h-[440px] object-cover"
@@ -39,7 +40,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang, onExplo
             {/* Overlapping Inset Card */}
             <div className="hidden sm:block absolute -bottom-8 -right-8 w-64 rounded overflow-hidden shadow-2xl border-4 border-white z-20">
               <img
-                src="/src/assets/images/interior_living_kazanchis_1794125397684.jpg"
+                src={propertyImages.interiorLiving}
                 alt="Luxury Penthouse Finishes"
                 referrerPolicy="no-referrer"
                 className="w-full h-44 object-cover"

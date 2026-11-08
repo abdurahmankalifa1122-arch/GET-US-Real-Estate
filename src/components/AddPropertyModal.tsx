@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, Plus, AlertCircle, CheckCircle } from 'lucide-react';
 import { Property, PropertyType, PropertyPurpose, PropertyLocation, Language } from '../types';
 import { translations } from '../data/translations';
+import { propertyImages } from '../assets/images';
 
 interface AddPropertyModalProps {
   currentLang: Language;
@@ -69,11 +70,11 @@ export const AddPropertyModal: React.FC<AddPropertyModalProps> = ({
       balconies: Number(balconies),
       images: [
         type === 'villa'
-          ? '/src/assets/images/villa_summit72_exterior_1794125396413.jpg'
+          ? propertyImages.villaSummit72
           : type === 'office'
-          ? '/src/assets/images/commercial_tower_addis_1794125397455.jpg'
-          : '/src/assets/images/hero_kazanchis_luxury_1794125396070.jpg',
-        '/src/assets/images/interior_living_kazanchis_1794125397684.jpg',
+          ? propertyImages.commercialTower
+          : propertyImages.heroKazanchis,
+        propertyImages.interiorLiving,
       ],
       description: {
         en: descEn || 'Architecturally designed luxury space constructed with high standard finishes and modern infrastructure.',

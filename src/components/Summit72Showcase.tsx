@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Trees, ShieldCheck, MapPin, CheckCircle } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { propertyImages } from '../assets/images';
 
 interface Summit72ShowcaseProps {
   currentLang: Language;
@@ -79,7 +80,7 @@ export const Summit72Showcase: React.FC<Summit72ShowcaseProps> = ({ currentLang,
           {/* Main Hero Photo for Summit 72 */}
           <div className="lg:col-span-7 relative rounded overflow-hidden shadow-2xl border border-white/15 min-h-[360px] sm:min-h-[460px]">
             <img
-              src="/src/assets/images/villa_summit72_exterior_1794125396413.jpg"
+              src={propertyImages.villaSummit72}
               alt="Summit 72 Luxury Modern G+1 Villa Architecture"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

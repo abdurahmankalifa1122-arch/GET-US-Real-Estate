@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ArrowRight, ShieldCheck, Building2, Compass } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { propertyImages } from '../assets/images';
 
 interface HeroProps {
   currentLang: Language;
@@ -18,19 +19,19 @@ interface SlideItem {
 
 const slides: SlideItem[] = [
   {
-    image: '/src/assets/images/hero_kazanchis_luxury_1794125396070.jpg',
+    image: propertyImages.heroKazanchis,
     category: { en: 'Luxury Apartments', am: 'የቅንጦት አፓርታማዎች' },
     title: { en: 'Kazanchis Metropolitan Towers', am: 'የካዛንቺስ ዘመናዊ ታወሮች' },
     location: { en: 'Kazanchis, Addis Ababa', am: 'ካዛንቺስ፣ አዲስ አበባ' },
   },
   {
-    image: '/src/assets/images/villa_summit72_exterior_1794125396413.jpg',
+    image: propertyImages.villaSummit72,
     category: { en: 'Family Villas', am: 'የቤተሰብ ቪላዎች' },
     title: { en: 'Summit 72 Contemporary G+1 Villas', am: 'ሰሚት 72 ዘመናዊ ጂ+1 ቪላዎች' },
     location: { en: 'Summit 72, Addis Ababa', am: 'ሰሚት 72፣ አዲስ አበባ' },
   },
   {
-    image: '/src/assets/images/commercial_tower_addis_1794125397455.jpg',
+    image: propertyImages.commercialTower,
     category: { en: 'Commercial Buildings', am: 'የንግድ ሕንፃዎች' },
     title: { en: 'Addis Ababa Corporate Spaces', am: 'የአዲስ አበባ የንግድና ቢሮ ማዕከላት' },
     location: { en: 'Addis Ababa Business District', am: 'የአዲስ አበባ የንግድ ቀጠና' },

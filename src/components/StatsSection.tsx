@@ -20,6 +20,11 @@ export const StatsSection: React.FC<StatsSectionProps> = ({ currentLang }) => {
   ];
 
   useEffect(() => {
+    if (typeof window === 'undefined' || typeof IntersectionObserver === 'undefined') {
+      setCounts([40000, 32, 2, 15]);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
