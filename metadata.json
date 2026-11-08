@@ -1,0 +1,6 @@
+{
+  "name": "GET-AS Real Estate | Luxury Ethiopian Living",
+  "description": "Ultra-premium real estate development in Kazanchis and Summit 72, Addis Ababa, Ethiopia. Luxury apartments, contemporary G+1 villas, and commercial spaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
